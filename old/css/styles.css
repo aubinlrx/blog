@@ -1,0 +1,154 @@
+body {
+	background-color: #ededed;
+}
+
+.clear {
+	overflow: hidden;
+	clear: both;
+}
+
+a {
+	text-decoration: none;
+	text-transform: none;
+	color: #333;
+}
+
+header {
+	/*height: 180px;
+	z-index: 100;
+	position: fixed;*/
+	display: block;
+	background: #ededed;
+	width: 100%;
+	border-top: 3px solid #0d0605;
+}
+
+.menu ul {
+	height: 20px;
+	padding: 20px 0 5px 0;
+	list-style-type: none;
+	text-align: center;
+}
+
+.menu ul li {
+	display: inline;
+	margin-right: 20px;
+}
+
+.menu ul li a {
+	font-size: 1.6em;
+	font-style: italic;
+	font-family: 'DidotLTStdItalic';
+}
+
+header .img{
+	text-align: center;
+	margin: 0 45%;
+	padding: 20px 0;
+}
+
+.main {
+	/*padding-top: 200px;*/
+	padding-bottom: 30px;
+}
+
+article {
+	display: block;
+	width: 100%;
+	position: relative;
+	padding: 10px 0;
+}
+
+article .article-content {
+	width: 60%;
+	margin: 0 auto;
+}
+
+article h1 {
+	text-align: center;
+	font-family: 'TheanoDidotRegular';
+	font-style: italic;
+	font-weight: normal;
+	margin-bottom: 0;
+	font-size: 2.9em;
+}
+
+article h2 {
+	text-align: center;
+	margin-bottom: 10px;
+	font-size: 1em;
+	font-family: "Minion pro";	
+}
+
+article h3 {
+	font-family: Georgia;
+	text-align: center;
+	font-size: 1em;
+}
+
+
+article p {
+	font-size: 1.5em;
+	font-family: Georgia;
+	line-height: 1.7em;
+}
+
+article img {
+	max-width: 90%;
+	border-radius: 5px;
+	margin: 20px auto;
+	display: block;
+}
+
+.navigation span {
+	height: 30px;
+	width: 30px;
+	background: #0d0605;
+	color: #ededed;
+	display: block;
+	top: 40%;
+	position: fixed;
+	opacity: 0.23;
+}
+
+.navigation .next {
+	right: 0;
+}
+
+.navigation .right {
+	left: 0;
+}
+
+footer {
+	background-color: #0d0605;
+	color: #ededed;
+}
+
+footer .footer-content {
+	width: 60%;
+	margin: 0 auto;
+	padding: 15px 0px 0px 0px;
+}
+
+.footer-content h3 {
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	margin-bottom: 3px;
+}
+
+.footer-content ul {
+	list-style-type: none;
+}
+
+.footer-content ul li {
+	font-family: 'Calibri', Helvetica, Arial, sans-serif;
+	color: #afafaf;
+	font-style: italic;
+}
+
+.content {
+	width: 33%;
+	float: left;
+}
+
+

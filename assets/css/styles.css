@@ -1,0 +1,267 @@
+body {
+	background-color: #ededed;
+}
+
+.clear {
+	overflow: hidden;
+	clear: both;
+}
+
+.push-right {
+	float: right;
+}
+
+.push-left {
+	float: left;
+}
+
+a {
+	text-decoration: none;
+	text-transform: none;
+	color: #333;
+}
+
+a, img, td {
+	/*CSS3 Transition sur les liens*/
+	-webkit-transition: all 0.25s linear; 
+	-moz-transition: all 0.25s linear; 
+	-o-transition: all 0.25s linear; 
+	transition: all 0.25s linear;
+}
+
+header.menu-header {
+	/*height: 180px;
+	z-index: 100;
+	position: fixed;*/
+	display: block;
+	background: #ededed;
+	width: 100%;
+	border-top: 3px solid #0d0605;
+}
+
+.menu ul {
+	height: 20px;
+	padding: 20px 0 5px 0;
+	list-style-type: none;
+	text-align: center;
+}
+
+.menu ul li {
+	display: inline;
+	margin-right: 20px;
+}
+
+.menu ul li.barre {
+	font-size: 2em;
+	font-weight: normal;
+	font-family: "kulturista-web";
+}
+
+.menu ul li a {
+	font-size: 1.6em;
+	font-style: italic;
+	font-family: 'DidotLTStdItalic';
+}
+
+.menu ul li a.active {
+	text-decoration: line-through;
+}
+
+header .img{
+	text-align: center;
+	margin: 0 45%;
+	padding: 20px 0;
+}
+
+.main {
+	/*padding-top: 200px;*/
+	padding-bottom: 30px;
+}
+
+.main header {
+	width: 100%;
+	height: 300px;
+	margin: 40px 0;
+	background-color: black;
+	overflow: hidden;
+}
+
+.main header img {
+	width: 100%;
+}
+
+.portfolio-content {
+	width: 900px;
+	margin: 0 auto;
+}
+
+ol.grid {
+	list-style-type: none;
+	display: block;
+}
+
+ol.grid li {
+	float: left;
+	margin-right: 74px;
+	margin-bottom: 20px;
+}
+
+ol.grid li.end-of-grid {
+	margin-right: 0;
+}
+
+ol.grid li img {
+	height: 150px;
+	width: 250px;
+	display: block;
+	background: gray;
+}
+
+ol.grid li h3 {
+	font-size: 1.2em;
+	font-weight: normal;
+	line-height: 0.3em;
+	margin-bottom: 0;
+	margin-top: 10px;
+	font-family: "DidotLTStdItalic";
+}
+
+ol.grid li span {
+	font-family: calibri;
+	font-size: 0.9em;
+}
+
+article {
+	display: block;
+	width: 100%;
+	position: relative;
+	padding: 10px 0;
+}
+
+article .article-content {
+	width: 750px;
+	margin: 0 auto;
+}
+
+article h1 {
+	text-align: center;
+	font-family: 'DidotLTStdItalic';
+	font-style: italic;
+	margin-bottom: 0;
+	font-size: 2.9em;
+	font-weight: normal;
+}
+
+article h1 a:hover {
+	color: #8b1509;
+	text-decoration: underline;
+	
+}
+
+article h2 {
+	text-align: center;
+	margin-bottom: 10px;
+	font-size: 1em;
+	font-family: "Minion pro";	
+}
+
+article h3 {
+	font-family: Georgia;
+	text-align: center;
+	font-size: 1em;
+}
+
+
+article p {
+	font-size: 1.4em;
+	font-family: Georgia;
+	line-height: 1.7em;
+	/*text-align: justify;*/
+	margin: 45px 0;
+}
+
+article p.last {
+	margin: 45px 0 15px 0;
+}
+
+article div.img {
+	max-width: 80%;
+	margin: 20px auto;
+}
+
+article img {
+	max-width: 100%;
+	border-radius: 5px;
+}
+
+blockquote {
+	margin-right: auto;
+	margin-left: auto;
+	width: 80%;
+	margin-bottom: 45px;
+}
+
+blockquote p {
+	line-height: 1.5;
+	margin-bottom: 0;
+	font-size: 1.8em;
+	font-weight: bold;
+}
+
+blockquote cite {
+	float: right;
+}
+
+.navigation span {
+	height: 30px;
+	width: 30px;
+	background: #0d0605;
+	color: #ededed;
+	display: block;
+	top: 40%;
+	position: fixed;
+	opacity: 0.23;
+}
+
+.navigation .next {
+	right: 0;
+}
+
+.navigation .right {
+	left: 0;
+}
+
+footer {
+	background-color: #0d0605;
+	color: #ededed;
+}
+
+footer .footer-content {
+	width: 60%;
+	margin: 0 auto;
+	padding: 15px 0px 0px 0px;
+}
+
+.footer-content h3 {
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	margin-bottom: 3px;
+}
+
+.footer-content ul {
+	list-style-type: none;
+}
+
+.footer-content ul li {
+	font-family: 'Calibri', Helvetica, Arial, sans-serif;
+	color: #afafaf;
+	font-style: italic;
+}
+
+.content {
+	width: 25%;
+	float: left;
+	margin-left: 8%;
+}
+
+

@@ -258,6 +258,10 @@ footer .footer-content {
 	font-style: italic;
 }
 
+.footer-content ul li a {
+	color: #afafaf;
+}
+
 .content {
 	width: 25%;
 	float: left;

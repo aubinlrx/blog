@@ -4,7 +4,7 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<link rel="shortcut icon" href="/favicon.ico" type="favicon.png" />
-	<title></title>
+	<title>Aubin LORIEUX - {{page.title}}</title>
 	<meta name="description" content=""/>
 	<link type="text/css" rel="stylesheet" media="screen" href="{{site.baseurl}}/assets/css/reset.css" />
 	<link type="text/css" rel="stylesheet" media="screen" href="{{site.baseurl}}/assets/css/text.css" />
@@ -32,31 +32,52 @@
 	<footer>
 		<div class="footer-content">
 			<div class='content content-1'>
-				<h3>ARCHIVE</h3>
+				<h3>CATEGORIES</h3>
 				<ul>
-					<li>Janvier</li>
-					<li>Fevrier</li>
-					<li>Mars</li>
+				{% for cat in site.categories %}
+					<li><a href="{{site.baseurl}}/categories/{{cat[0]}}">{{cat[0]}}</a></li>
+				{% endfor %}
 				</ul>
 			</div>
 			<div class="content content-2">
 				<h3>RECENT</h3>
 				<ul>
-					<li>Fuck that shiit</li>
-					<li>No man, I don't eat pork</li>
-					<li>I can do that</li>
+					{% for post in site.posts limit:3 %}
+					<li><a href="{{post.url}}">{{post.title}}</a></li>
+					{% endfor %}
 				</ul>
 			</div>
 			<div class="content content-2">
 				<h3>LAST TWEET</h3>
+				<div id="twitter_update_list">
+				</div>
 				<ul>
-					<li><span class="author">@AubinDesign</span>
-						<p>Hélas, les Ganor, de nationalité soviétique, ne purent bénéficier de ses visas. Ils furent tous déportés.</p>
+					<li>
+						<p id="tweet_container"></p>
 					</li>
 				</ul>
 			</div>
 			<div class="clear"></div>
 		</div>
 	</footer>
+	<script>
+		
+		var twitterCallback2 = function(tweets) {
+			var self = this;
+			this.tweets = tweets;
+
+			this.__contruct__ = function() {
+				self.display()
+			}
+
+			this.display = function() {
+				document.getElementById('tweet_container').innerHTML = self.tweets[0].text;
+			}
+
+			this.__contruct__();
+		}
+		
+	</script>
+	<script type="text/javascript" src="https://api.twitter.com/1/statuses/user_timeline/aubinlrx.json?callback=twitterCallback2&count=1"></script>
 </body>
 </html>
